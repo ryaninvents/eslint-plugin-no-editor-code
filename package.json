@@ -1,12 +1,28 @@
 {
     "name": "eslint-plugin-no-editor-code",
-    "version": "0.0.0-semantically-released",
+    "version": "0.0.0-development",
+    "repository": "https://github.com/r24y/eslint-plugin-no-editor-code.git",
     "main": "src/index.js",
     "files": [
         "src"
     ],
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    },
+    "release": {
+        "branch": "develop",
+        "analyzeCommits": {
+            "preset": "eslint",
+            "releaseRules": [
+                {
+                    "tag": "Docs",
+                    "scope": "README",
+                    "release": "patch"
+                }
+            ]
+        },
+        "getLastRelease": "./config/get-last-release"
     },
     "devDependencies": {
         "babel-eslint": "^8.0.1",
@@ -17,6 +33,7 @@
         "eslint-plugin-import": "^2.7.0",
         "eslint-plugin-jsx-a11y": "^5.1.1",
         "eslint-plugin-react": "^7.4.0",
-        "jest": "^21.2.1"
+        "jest": "^21.2.1",
+        "semantic-release": "^8.0.3"
     }
 }

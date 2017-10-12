@@ -1,0 +1,22 @@
+{
+    "name": "eslint-plugin-no-editor-code",
+    "version": "0.0.0-semantically-released",
+    "main": "src/index.js",
+    "files": [
+        "src"
+    ],
+    "scripts": {
+        "test": "jest"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.0.1",
+        "dedent": "^0.7.0",
+        "eslint": "^4.8.0",
+        "eslint-config-react-app": "^2.0.1",
+        "eslint-plugin-flowtype": "^2.39.1",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-jsx-a11y": "^5.1.1",
+        "eslint-plugin-react": "^7.4.0",
+        "jest": "^21.2.1"
+    }
+}

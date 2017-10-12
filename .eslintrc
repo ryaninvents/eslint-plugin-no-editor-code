@@ -1,0 +1,15 @@
+---
+extends: react-app
+parser: babel-eslint
+# DOGFOOD: uncomment next line
+# plugins: [no-editor-code]
+rules:
+  semi: [error, always]
+  comma-dangle: [error, always-multiline]
+  space-before-function-paren: [error, {
+    anonymous: always,
+    named: never,
+    asyncArrow: always,
+  }]
+  # DOGFOOD: uncomment next line
+  # no-editor-code/no-region: error

@@ -21,8 +21,7 @@
                     "release": "patch"
                 }
             ]
-        },
-        "getLastRelease": "./config/get-last-release"
+        }
     },
     "devDependencies": {
         "babel-eslint": "^8.0.1",

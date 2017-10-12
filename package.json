@@ -1,5 +1,5 @@
 {
-    "name": "eslint-plugin-no-editor-code",
+    "name": "@r24y/eslint-plugin-no-editor-code",
     "version": "0.0.0-development",
     "repository": "https://github.com/r24y/eslint-plugin-no-editor-code.git",
     "main": "src/index.js",
